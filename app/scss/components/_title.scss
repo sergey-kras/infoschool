@@ -1,0 +1,17 @@
+.title {
+    font-family: 'Roboto Slab';
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+    &:after {
+        content: '';
+        position: absolute;
+        background-color: #fe2d2d;
+        width: 60px;
+        height: 5px;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}

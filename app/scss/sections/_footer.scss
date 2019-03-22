@@ -1,0 +1,46 @@
+.footer {
+    font-family: 'LatoSemibold';
+    background-color: #426cf2;
+    color: #fff;
+    &__menu {
+        @include size(10);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        @include wrapper;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        padding: 25px 0;
+        display: inline-block;
+        color: #fff;
+        font-family: 'LatoSemibold';
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+    &__item {
+        list-style-type: none;
+    }
+    &__copy {
+        @include size(1.5);
+        padding: 25px 0;
+        position: relative;
+        text-align: right;
+        font-size: 0.75rem;
+        &:before {
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            height: 85%;
+            width: 1px;
+            top: 8%;
+            left: 0;
+            transform: translate(-50%, 0);
+        }
+    }
+}

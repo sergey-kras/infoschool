@@ -3,12 +3,38 @@
     text-align: center;
     font-family: "LatoSemibold";
     font-size: 0.75rem;
-    padding: 15px 5px;
+    padding: 15px 30px;
     box-sizing: border-box;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &._form {
         background-color: #ff3232;
         border: 1px solid #ff3232;
         color: #fff;
+    }
+    &._news {
+        color: #4368dc;
+        font-family: "LatoMedium";
+        border: 1px solid #4368dc;
+        &:hover {
+            .button__icon {
+                margin-left: 3px;
+            }
+            .button__text {
+                margin-left: 3px;
+            }
+        }
+    }
+    &__text {
+        margin-right: 5px;
+        margin-left: 0px;
+        transition: .3s;
+    }
+    &__icon {
+        margin-top: 3px;
+        transition: .3s;
     }
 }

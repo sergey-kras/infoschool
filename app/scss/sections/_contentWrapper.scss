@@ -1,0 +1,31 @@
+.contentWrapper {
+    position: relative;
+    &__container {
+        @include wrapper();
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        height: 515px;
+        width: 220px;
+        left: 0px;
+        top: 500px;
+        background-image: url(../../img/leftBg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        height: 515px;
+        width: 220px;
+        right: 0px;
+        top: 1300px;
+        background-image: url(../../img/rightBg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: right;
+    }
+}

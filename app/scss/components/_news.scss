@@ -1,0 +1,39 @@
+.news {
+    display: flex;
+    justify-content: space-between;
+    &__info {
+        @include size(6);
+    }
+    &__image {
+        @include size(5);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__title {
+        font-family: "Roboto Slab";
+        color: #355ad4;
+        font-size: 1.25rem;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    &__text {
+        margin-top: 15px;
+        font-family: "LatoMedium";
+        font-size: 0.833rem;
+        color: #1a1a1d;
+        line-height: 1.25rem;
+        margin-bottom: 25px;
+    }
+    &__button {
+        width: 210px;
+    }
+    &._inverce {
+        .news__info {
+            order: 2;
+        }
+        .news__image {
+            order: 1;
+        }
+    }
+}

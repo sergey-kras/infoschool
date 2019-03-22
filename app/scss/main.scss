@@ -4,8 +4,15 @@
 @import "fonts";
 
 @import "sections/mainDisplay";
+@import "sections/mainMenu";
+@import "sections/contentWrapper";
+@import "sections/videoBlock";
+@import "sections/newsBlock";
+@import "sections/footer";
 
 @import "components/headTitile";
 @import "components/contactForm";
 @import "components/button";
 @import "components/miniContact";
+@import "components/title";
+@import "components/news";
