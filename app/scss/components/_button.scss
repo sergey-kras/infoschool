@@ -1,0 +1,14 @@
+.button {
+    width: 100%;
+    text-align: center;
+    font-family: "LatoSemibold";
+    font-size: 0.75rem;
+    padding: 15px 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    &._form {
+        background-color: #ff3232;
+        border: 1px solid #ff3232;
+        color: #fff;
+    }
+}

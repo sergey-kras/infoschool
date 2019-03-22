@@ -1,0 +1,52 @@
+.mainDisplay {
+    background-image: url(../img/bg_main.svg);
+    height: 35vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 25%;
+    &__content {
+        @include wrapper();
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+    }
+    &__head {
+        @include size(4);
+        @include col();
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 3;
+    }
+    &__body {
+        @include size(4);
+        @include col();
+        margin-top: 15px;
+        position: relative;
+        z-index: 3;
+    }
+    &__persons {
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        z-index: 2;
+        bottom: -6px;
+    }
+    &__contact {
+        position: absolute;
+        z-index: 3;
+        bottom: 50px;
+        &._left{
+            left: 0;
+            transform: translate(-100%, 0);
+        }
+        &._right{
+            right: 0;
+            transform: translate(100%, 0);
+        }
+    }
+}

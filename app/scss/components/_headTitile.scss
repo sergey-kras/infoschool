@@ -1,0 +1,18 @@
+.headTitile {
+    font-family: 'LatoBlack';
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+    &__title {
+        font-size: 2rem;
+        color: #316bf2;
+        letter-spacing: .17rem;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    &__subtitle{
+        font-size: 0.875rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,20 @@
+.miniContact {
+    &__name {
+        font-family: "LatoMedium";
+        font-size: .75rem;
+        margin-bottom: 15px;
+    }
+    &._onLinghtBg {
+        color: #fff;
+    }
+    &._onDarkBg {
+        color: #141417;
+    }
+    &__socials{
+        @include row-flex();
+    }
+    &__social{
+        @include col();
+        text-decoration: none;
+    }
+}

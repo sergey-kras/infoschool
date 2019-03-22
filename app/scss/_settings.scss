@@ -4,14 +4,9 @@
     }
 }
 
-.container {
-    @include wrapper();
-}
-
 img {
     max-width: 100%;
 }
-
 html,
 body {
     font-size: 24px;
