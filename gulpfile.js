@@ -8,6 +8,12 @@ var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
 var smartgrid = require('smart-grid');
 var clean = require('gulp-clean');
+var sourcemaps = require('gulp-sourcemaps');
+var plumber = require('gulp-plumber');
+var notify = require('gulp-notify');
+var include = require("gulp-include");
+var jsImport = require('gulp-js-import');
+var browserify = require('gulp-browserify');
 
 gulp.task('smartgrid', function () {
     /* It's principal settings in smart grid project */
@@ -38,9 +44,16 @@ gulp.task('smartgrid', function () {
     };
     smartgrid('./app/scss/', settings);
 });
-gulp.task('sass',['smartgrid'], function () {
+gulp.task('sass', ['smartgrid'], function () {
     gulp.src('./app/scss/main.scss')
+        .pipe(plumber({
+            errorHandler: notify.onError(err => ({
+                title: 'ERROR SASS Сompilation',
+                message: err.message
+            }))
+        }))
         .pipe(autoprefixer()) // автопрефикс
+        .pipe(sourcemaps.write('.'))
         .pipe(sass(
             {
                 includePaths: require('node-normalize-scss').includePaths,
@@ -51,32 +64,35 @@ gulp.task('sass',['smartgrid'], function () {
 gulp.task('html', function () {
     gulp.src('./app/*.html').pipe(gulp.dest('./dist/'));
 });
-gulp.task('libs', function() {
-    return gulp.src([
-        'app/js/jquery.min.js',
-        'app/js/libs/*.js',
-        'app/js/common.js'
-    ])
+gulp.task('libs', function () {
+    return gulp.src('app/js/common.js')
+        .pipe(browserify())
+        .pipe(plumber({
+            errorHandler: notify.onError(err => ({
+                title: 'ERROR SASS Сompilation',
+                message: err.message
+            }))
+        }))
         .pipe(concat('scripts.min.js')) // Собираем их в кучу в новом файле libs.min.js
-        .pipe(uglify()) // Сжимаем JS файл
+        //.pipe(uglify()) // Сжимаем JS файл
         .pipe(gulp.dest('./dist/js')) // Выгружаем в папку app/js
 });
-gulp.task('compress',['clean-img'], function() {
+gulp.task('compress', ['clean-img'], function () {
     gulp.src('./app/img/*')
         .pipe(imagemin([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.jpegtran({progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.gifsicle({ interlaced: true }),
+            imagemin.jpegtran({ progressive: true }),
+            imagemin.optipng({ optimizationLevel: 5 }),
             imagemin.svgo({
                 plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: false}
+                    { removeViewBox: true },
+                    { cleanupIDs: false }
                 ]
             })
         ]))
         .pipe(gulp.dest('./dist/img/'))
 });
-gulp.task('watcher',['html', 'libs', 'sass'], function() {
+gulp.task('watcher', ['html', 'libs', 'sass'], function () {
     gulp.watch("./app/scss/**/*.scss", ['sass']);
     gulp.watch("./app/scss/*.scss", ['sass']);
     gulp.watch("./app/js/*.js", ['libs']);
@@ -87,34 +103,34 @@ gulp.task('browser', function () {
     var files = [
         './**/*'
     ];
-    browserSync.init( files,
+    browserSync.init(files,
         {
             injectChanges: true,
             server: "./dist",
             open: false,
             notify: false,
             port: 8080,
-            watchOptions : {
-                ignored : [
+            watchOptions: {
+                ignored: [
                     'node_modules/*'
                 ],
-                ignoreInitial : true
+                ignoreInitial: true
             }
         });
 });
 gulp.task('clean-dist', function () {
-    return gulp.src('dist/', {read: false})
+    return gulp.src('dist/', { read: false })
         .pipe(clean());
 });
 gulp.task('clean-img', function () {
-    return gulp.src('dist/img', {read: false})
+    return gulp.src('dist/img', { read: false })
         .pipe(clean());
 });
-gulp.task('connect', function() {
+gulp.task('connect', function () {
     connect.server({
         port: 8080,
         hostname: 'localhost',
         base: './dist'
     });
 });
-gulp.task('server', ['browser','watcher']);
+gulp.task('server', ['browser', 'watcher']);
