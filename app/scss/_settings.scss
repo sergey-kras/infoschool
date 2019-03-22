@@ -1,0 +1,18 @@
+@mixin resp($min, $max) {
+    @media screen and (min-width: $min + 'px') and (max-width: $max + 'px') {
+        @content
+    }
+}
+
+.container {
+    @include wrapper();
+}
+
+img {
+    max-width: 100%;
+}
+
+html,
+body {
+    font-size: 24px;
+}
