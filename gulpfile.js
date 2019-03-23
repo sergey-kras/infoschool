@@ -65,7 +65,7 @@ gulp.task('html', function () {
     gulp.src('./app/*.html').pipe(gulp.dest('./dist/'));
 });
 gulp.task('libs', function () {
-    return gulp.src('app/js/common.js')
+    return gulp.src(['jquery', 'app/js/common.js'])
         .pipe(browserify())
         .pipe(plumber({
             errorHandler: notify.onError(err => ({
