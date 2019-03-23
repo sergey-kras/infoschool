@@ -4,12 +4,13 @@
     position: relative;
     text-align: center;
     padding-bottom: 30px;
+    padding-top: 15px;
     &:after {
         content: '';
         position: absolute;
         background-color: #fe2d2d;
-        width: 60px;
-        height: 5px;
+        width: 55px;
+        height: 7px;
         bottom: 0px;
         left: 50%;
         transform: translate(-50%, 0);

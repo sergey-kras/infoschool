@@ -2,20 +2,21 @@
     text-align: center;
     background-color: #fff;
     box-shadow: 0px 0px 28px -3px rgba(0, 0, 0, 0.58);
-    padding: 50px 30px;
+    padding: 38px 35px;
     box-sizing: border-box;
     &__title {
         text-transform: uppercase;
         font-family: 'LatoHeavy';
         color: #316bf2;
         margin-bottom: 7px;
+        font-size: 1.166rem;
     }
     &__subsite {
         font-family: 'LatoSemibold';
         color: #141417;
         font-size: 0.75rem;
         margin-top: 7px;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
     }
     &__row {
         position: relative;
@@ -39,7 +40,7 @@
         padding-left: 75px;
         box-sizing: border-box;
     }
-    &__bottom{
-        margin-top: 25px;
+    &__bottom {
+        margin-top: 33px;
     }
 }

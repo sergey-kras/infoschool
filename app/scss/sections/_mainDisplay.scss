@@ -1,6 +1,6 @@
 .mainDisplay {
     background-image: url(../img/bg_main.svg);
-    height: 35vw;
+    height: 38vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20% 25%;
@@ -32,9 +32,11 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        width: 100%;
+        width: 90%;
         z-index: 2;
         bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     &__contact {
         position: absolute;
