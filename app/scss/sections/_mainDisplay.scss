@@ -2,8 +2,8 @@
     background-image: url(../img/bg_main.svg);
     height: 38vw;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 20% 25%;
+    background-size: 102%;
+    background-position: 30% 35%;
     &__content {
         @include wrapper();
         display: flex;
