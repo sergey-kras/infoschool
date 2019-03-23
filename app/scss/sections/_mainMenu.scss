@@ -1,13 +1,33 @@
 .mainMenu {
     box-shadow: 0px 0px 35px -2px rgba(0, 0, 0, 0.35);
-
-    @include resp(0, 960) {
-        display: none;
-    }
     &__content {
         @include wrapper();
         display: flex;
         justify-content: space-between;
+        @include resp(0, 960) {
+            opacity: 0;
+            display: flex;
+            position: fixed;
+            z-index: -1;
+            height: 100%;
+            top: 0;
+            width: 100vw;
+            padding: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 0s;
+            transition-delay: 0s;
+            top: -100vh;
+        }
+        &._opened {
+            top: 0;
+            opacity: 1;
+            z-index: 9;
+            transition: 1s;
+            transition-delay: .1s;
+            ;
+        }
     }
     &__item {
         list-style-type: none;
@@ -38,11 +58,26 @@
             left: 0;
             opacity: 0;
             transition: .3s;
+            @include resp(0, 960) {
+                display: none;
+            }
         }
         &:hover {
             &:after {
                 opacity: 1;
                 bottom: 0;
+            }
+        }
+        @include resp(0, 960) {
+            font-family: 'LatoBlack';
+            font-size: 2rem;
+            padding: 0;
+            margin: 7px 0;
+            &._active {
+                color: #316bf2;
+            }
+            &:hover {
+                color: #316bf2;
             }
         }
     }

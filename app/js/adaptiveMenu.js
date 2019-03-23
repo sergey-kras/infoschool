@@ -9,8 +9,7 @@ function menu($) {
 
 
     function switcher(event) {
-        console.log($burger.width());
-        if (opened) {
+        if (!opened) {
             $overley.addClass('_opened');
             $burger.addClass('_opened');
             $menu.addClass('_opened');
