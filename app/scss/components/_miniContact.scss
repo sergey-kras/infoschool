@@ -16,5 +16,10 @@
     &__social{
         @include col();
         text-decoration: none;
+        transition: .3s;
+        &:hover {
+            margin-top: -3px;
+            margin-bottom: 3px;
+        }
     }
 }
