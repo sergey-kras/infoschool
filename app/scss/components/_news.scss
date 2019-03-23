@@ -1,11 +1,27 @@
 .news {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     &__info {
         @include size(6);
+        @include size-lg(12);
+        @include resp(0, 960){
+            order: 2;
+        }
+        margin: 0 auto;
     }
     &__image {
         @include size(5);
+        @include resp(0, 1300){
+            @include size(6);
+        }
+        @include size-lg(12);
+        @include resp(0, 960){
+            min-height: 40vw;
+            order: 1;
+        }
+        margin: 0 auto;
+        margin-bottom: 15px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

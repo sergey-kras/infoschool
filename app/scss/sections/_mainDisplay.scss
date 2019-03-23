@@ -4,6 +4,10 @@
     background-repeat: no-repeat;
     background-size: 102%;
     background-position: 30% 35%;
+    min-height: 590px;
+    @include resp(0, 1170) {
+        background-size: cover;
+    }
     &__content {
         @include wrapper();
         display: flex;
@@ -14,18 +18,22 @@
         position: relative;
     }
     &__head {
-        @include size(4);
+        width: 385px;
         @include col();
         margin-bottom: 15px;
         position: relative;
         z-index: 3;
     }
     &__body {
-        @include size(4);
+        width: 385px;
         @include col();
         margin-top: 15px;
         position: relative;
         z-index: 3;
+        @include size-lg(7);
+        @include size-md(9);
+        @include size-sm(11);
+        @include size-xs(12);
     }
     &__persons {
         position: absolute;
@@ -37,6 +45,12 @@
         bottom: -6px;
         left: 50%;
         transform: translateX(-50%);
+        @include resp(0, 1170) {
+            bottom: -5px;
+        }
+        @include resp(0, 960) {
+            display: none;
+        }
     }
     &__contact {
         position: absolute;
@@ -45,10 +59,28 @@
         &._left{
             left: 0;
             transform: translate(-100%, 0);
+            @include resp(0,1600){
+                transform: translate(100%, 0);
+            }
+            @include resp(0, 960) {
+                transform: none;
+            }
         }
         &._right{
             right: 0;
             transform: translate(100%, 0);
+            @include resp(0,1600){
+                transform: translate(-100%, 0);
+            }
+            @include resp(0, 960) {
+                transform: none;
+            }
+        }
+        @include resp(0, 960) {
+            display: none;
+            transform: none;
+            position: relative;
+            bottom: initial;
         }
     }
 }

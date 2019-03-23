@@ -2,10 +2,18 @@
     position: relative;
     &__container {
         @include wrapper();
+        @include size-lg(10);
+        @include size-md(11);
+        @include size-sm(12);
         padding-top: 30px;
         padding-bottom: 30px;
+        box-sizing: border-box;
+        @include resp(0, 960) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
     }
-    &:before{
+    &:before {
         content: '';
         position: absolute;
         height: 515px;
@@ -15,8 +23,11 @@
         background-image: url(../../img/leftBg.png);
         background-repeat: no-repeat;
         background-size: contain;
+        @include resp(0, 1650) {
+            display: none;
+        }
     }
-    &:after{
+    &:after {
         content: '';
         position: absolute;
         height: 515px;
@@ -27,5 +38,8 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position-x: right;
+        @include resp(0, 1650) {
+            display: none;
+        }
     }
 }

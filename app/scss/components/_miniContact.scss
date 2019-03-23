@@ -3,6 +3,9 @@
         font-family: "LatoMedium";
         font-size: .75rem;
         margin-bottom: 15px;
+        @include resp(0,1600){
+            color: #fff;
+        }
     }
     &._onLinghtBg {
         color: #fff;

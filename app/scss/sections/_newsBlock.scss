@@ -1,9 +1,16 @@
 .newsBlock {
     &__title {
         margin-bottom: 50px;
+        @include resp(0, 960) {
+            margin-bottom: 25px;
+        }
     }
     &__item {
         margin-top: 55px;
         margin-bottom: 55px;
+        @include resp(0, 960) {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
     }
 }

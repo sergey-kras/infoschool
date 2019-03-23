@@ -10,4 +10,10 @@ img {
 html,
 body {
     font-size: 24px;
+    @include resp(0, 1170){
+        font-size: 20px;
+    }
+    @include resp(0, 960){
+        font-size: 16px;
+    }
 }

@@ -4,16 +4,22 @@
     color: #fff;
     &__menu {
         @include size(10);
+        @include size-md(12);
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: space-between;
+        @include resp(0, 960) {
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
     }
     &__content {
         @include wrapper;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
     &__link {
         padding: 25px 0;
@@ -27,12 +33,19 @@
         &:hover {
             margin-top: -3px;
         }
+        @include resp(0, 960) {
+            padding: 15px 0;
+        }
     }
     &__item {
         list-style-type: none;
+        @include resp(0, 960) {
+            @include col();
+        }
     }
     &__copy {
         @include size(1.5);
+        @include size-md(12);
         padding: 25px 0;
         position: relative;
         text-align: right;
@@ -46,6 +59,14 @@
             top: 8%;
             left: 0;
             transform: translate(-50%, 0);
+            @include resp(0, 780) {
+                display: none;
+            }
+        }
+        @include resp(0, 780) {
+            padding: 15px 0;
+            text-align: center;
+            border-top: 1px solid #fff;
         }
     }
 }

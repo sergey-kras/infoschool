@@ -1,3 +1,9 @@
 .videoBlock {
-    
+    &__content {
+        iframe{
+            @include resp(0, 960) {
+                height: 60vw;
+            }
+        }
+    }
 }

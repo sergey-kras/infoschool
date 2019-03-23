@@ -15,4 +15,8 @@
         left: 50%;
         transform: translate(-50%, 0);
     }
+    @include resp(0, 960) {
+        padding-bottom: 15px;
+        padding-top: 7px;
+    }
 }
