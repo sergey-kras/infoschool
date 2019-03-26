@@ -1,12 +1,15 @@
 .mainDisplay {
-    background-image: url(../img/bg_main.svg);
+    background-image: url(../img/bg_main.png);
     height: 38vw;
     background-repeat: no-repeat;
-    background-size: 102%;
+    background-size: cover;
     background-position: 30% 35%;
     min-height: 590px;
     @include resp(0, 1170) {
         background-size: cover;
+    }
+    @include resp(0, 960){
+        background-position: 90%;
     }
     &__content {
         @include wrapper();
@@ -18,7 +21,7 @@
         position: relative;
     }
     &__head {
-        width: 385px;
+        width: 400px;
         @include col();
         margin-bottom: 15px;
         position: relative;
@@ -26,7 +29,7 @@
         max-width: 100%;
     }
     &__body {
-        width: 385px;
+        width: 400px;
         @include col();
         margin-top: 15px;
         position: relative;

@@ -4,21 +4,21 @@ function menu($) {
     let $overley = $('.burger__overley');
     let $menu = $('.mainMenu__content');
     let $body = $('body');
+    let OPEN_CLASS = '_opened';
 
     $burger.on('click', switcher);
 
-
     function switcher(event) {
         if (!opened) {
-            $overley.addClass('_opened');
-            $burger.addClass('_opened');
-            $menu.addClass('_opened');
+            $overley.addClass(OPEN_CLASS);
+            $burger.addClass(OPEN_CLASS);
+            $menu.addClass(OPEN_CLASS);
             $body.css({ overflow: 'hidden' });
 
         } else {
-            $overley.removeClass('_opened');
-            $menu.removeClass('_opened');
-            $burger.removeClass('_opened');
+            $overley.removeClass(OPEN_CLASS);
+            $menu.removeClass(OPEN_CLASS);
+            $burger.removeClass(OPEN_CLASS);
             $body.css({ overflow: 'inherit' });
         }
         opened = !opened;

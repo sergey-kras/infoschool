@@ -1,0 +1,37 @@
+.bigPersonCard {
+    box-shadow: 0px 0px 28px -3px rgba(0, 0, 0, 0.58);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    position: relative;
+    @include resp(0, 560){
+        padding: 15px;
+    }
+    &__title {
+        font-family: "Roboto Slab";
+        font-size: 1rem;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    &__image {
+        padding-top: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        font-family: "Lato";
+        font-size: 0.666rem;
+        line-height: 0.75rem;
+        margin-bottom: 25px;
+    }
+
+    &__button {
+        width: 200px;
+    }
+
+}

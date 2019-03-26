@@ -1,12 +1,18 @@
 .contentWrapper {
     position: relative;
+    display: flex;
+    flex-direction: column;
     &__container {
         @include wrapper();
         @include size-lg(10);
         @include size-md(11);
         @include size-sm(12);
+
+        padding-right: 0;
+        padding-left: 0;
         padding-top: 30px;
         padding-bottom: 30px;
+        min-height: 100vh;
         box-sizing: border-box;
         @include resp(0, 960) {
             padding-top: 15px;

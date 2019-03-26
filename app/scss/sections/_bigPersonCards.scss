@@ -1,0 +1,39 @@
+.bigPersonCards {
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        @include col();
+        @include size(5.8);
+        @include size-md(12);
+        position: relative;
+        margin-bottom: 15px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            background-color: #316af0;
+            width: 60%;
+            height: 75px;
+            z-index: -2;
+            top: -15px;
+            left: -15px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            background-color: #316af0;
+            width: 60%;
+            height: 75px;
+            z-index: -2;
+            bottom: -15px;
+            right: -15px;
+        }
+    }
+
+}
