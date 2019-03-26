@@ -10,6 +10,7 @@
 
         padding-right: 0;
         padding-left: 0;
+        width: 100%;
         padding-top: 30px;
         padding-bottom: 30px;
         min-height: 100vh;
@@ -25,7 +26,7 @@
         height: 515px;
         width: 220px;
         left: 0px;
-        top: 500px;
+        top: 10%;
         background-image: url(../../img/leftBg.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -39,7 +40,7 @@
         height: 515px;
         width: 220px;
         right: 0px;
-        top: 1300px;
+        top: 50%;
         background-image: url(../../img/rightBg.png);
         background-repeat: no-repeat;
         background-size: contain;
