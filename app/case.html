@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru" id="contentHolder">
+
+<head>
+    <meta charset="utf-8"></meta>
+
+    <title>Infoschool</title>
+
+    <meta name="description" content=""></meta>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
+
+    <meta property="og:image" content="path/to/image.jpg"></meta>
+
+    <!-- <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+    <!-- Chrome, Firefox OS and Opera -->
+
+    <meta name="theme-color" content="#000"></meta>
+
+    <!-- Windows Phone -->
+
+    <meta name="msapplication-navbutton-color" content="#000"></meta>
+
+    <!-- iOS Safari -->
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"></meta>
+</head>
+
+<body>
+
+    <div class="burger">
+        <div class="burger__items" id="burger">
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+        </div>
+        <div class="burger__overley"></div>
+    </div>
+    <section class="mainDisplay">
+        <div class="mainDisplay__content">
+            <div class="mainDisplay__head">
+                <div class="headTitile">
+                    <h1 class="headTitile__title">
+                        Инфошкола
+                    </h1>
+                    <p class="headTitile__subtitle">
+                        Все об удаленных профессиях и онлайн&nbsp;-&nbsp;школах
+                    </p>
+                </div>
+            </div>
+            <div class="mainDisplay__body">
+                <form class="contactForm">
+                    <div class="contactForm__head">
+                        <div class="contactForm__title">
+                            Обзорный Курс
+                        </div>
+                        <div class="contactForm__subsite">
+                            Как открыть свою онлайн-школу и&nbsp;чтодля этого нужно?
+                        </div>
+                    </div>
+                    <div class="contactForm__body">
+                        <div class="contactForm__row">
+                            <label for="name" class="contactForm__label">
+                                Имя:
+                            </label>
+                            <input type="text" id="name" class="contactForm__field">
+                        </div>
+                        <div class="contactForm__row">
+                            <label for="email" class="contactForm__label">
+                                E-mail:
+                            </label>
+                            <input type="text" id="email" class="contactForm__field">
+                        </div>
+                    </div>
+                    <div class="contactForm__bottom">
+                        <input type="submit" value="Получить бесплатно" class="button _form">
+                    </div>
+                </form>
+            </div>
+            <div class="mainDisplay__persons">
+                <div class="mainDisplay__person">
+                    <img src="./img/vitaliy.png" alt="">
+                </div>
+                <div class="mainDisplay__person">
+                    <img src="./img/vitaliy2.png" alt="">
+                </div>
+            </div>
+            <div class="mainDisplay__contact _left">
+                <div class="miniContact _onDarkBg">
+                    <div class="miniContact__name">
+                        Виталий Плешаков
+                    </div>
+                    <div class="miniContact__socials">
+                        <a href="#" class="miniContact__social">
+                            <img src="./img/icons/instagramm.png" alt="">
+                        </a>
+                        <a href="#" class="miniContact__social">
+                            <img src="./img/icons/vk.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mainDisplay__contact _right">
+                <div class="miniContact _onLinghtBg">
+                    <div class="miniContact__name">
+                        Виталий Кудряшов
+                    </div>
+                    <div class="miniContact__socials">
+                        <a href="#" class="miniContact__social">
+                            <img src="./img/icons/instagramm.png" alt="">
+                        </a>
+                        <a href="#" class="miniContact__social">
+                            <img src="./img/icons/vk.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="mainMenu">
+        <menu class="mainMenu__content">
+            <li class="mainMenu__item">
+                <a href="#" class="mainMenu__link _active">
+                    Youtubte канал
+                </a>
+            </li>
+            <li class="mainMenu__item">
+                <a href="#" class="mainMenu__link">
+                    Проверенные специалисты
+                </a>
+            </li>
+            <li class="mainMenu__item">
+                <a href="#" class="mainMenu__link">
+                    Наши кейсы
+                </a>
+            </li>
+            <li class="mainMenu__item">
+                <a href="#" class="mainMenu__link">
+                    Наши обучающие программы
+                </a>
+            </li>
+            <li class="mainMenu__item">
+                <a href="#" class="mainMenu__link">
+                    Отзывы
+                </a>
+            </li>
+            <li class="mainMenu__item">
+                <a href="#" class="mainMenu__link">
+                    О нас
+                </a>
+            </li>
+        </menu>
+    </div>
+
+    <div class="contentWrapper">
+        <section class="contentWrapper__container">
+            <div class="bigPersonCards">
+                <div class="bigPersonCards__title">
+                    <h2 class="title">
+                        Наши Кейсы
+                    </h2>
+                </div>
+                <div class="bigPersonCards__cards">
+                    <div class="bigPersonCards__item">
+                        <articles class="case">
+                            <div class="case__title">
+                                <h3 class="title _small">
+                                    Ирина Изоточкина
+                                </h3>
+                            </div>
+                            <div class="case__changes">
+                                <div class="case__before">
+                                    <div class="cardChanges">
+                                        <div class="cardChanges__image" style="background-image: url(./img/changes1.png)"></div>
+                                        <div class="cardChanges__info">
+                                            <div class="cardChanges__title">
+                                                До обучения:
+                                            </div>
+                                            <p class="cardChanges__text">
+                                                Работала консультантом в салоне связи.
+                                            </p>
+                                            <div class="cardChanges__title _before">
+                                                Зарплата
+                                            </div>
+                                            <p class="cardChanges__text _before">
+                                                25 000 рубл в месяц.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case__after">
+                                    <div class="cardChanges">
+                                        <div class="cardChanges__image" style="background-image: url(./img/changes1.png)"></div>
+                                        <div class="cardChanges__info">
+                                            <div class="cardChanges__title">
+                                                До обучения:
+                                            </div>
+                                            <p class="cardChanges__text">
+                                                Работала консультантом в салоне связи.
+                                            </p>
+                                            <div class="cardChanges__title _after">
+                                                Зарплата
+                                            </div>
+                                            <p class="cardChanges__text _after">
+                                                25 000 рубл в месяц.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__info">
+                                <div class="case__title">
+                                    <h3 class="title _small _simple">
+                                        История
+                                    </h3>
+                                </div>
+                                <div class="case">
+                                    <div class="case__text">
+                                        Разнообразный и богатый опыт постоянное информационно пропагандистское обеспечение нашей деятельности позволяет оценить значение
+                                        соответствующий условий активизации.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__button">
+                                <a href="#" class="button _news _simple">
+                                    <div class="button__text">
+                                        Читать далее
+                                    </div>
+                                    <div class="button__icon">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </articles>
+                    </div>
+                    <div class="bigPersonCards__item">
+                        <articles class="case">
+                            <div class="case__title">
+                                <h3 class="title _small">
+                                    Ирина Изоточкина
+                                </h3>
+                            </div>
+                            <div class="case__changes">
+                                <div class="case__before">
+                                    <div class="cardChanges">
+                                        <div class="cardChanges__image" style="background-image: url(./img/changes1.png)"></div>
+                                        <div class="cardChanges__info">
+                                            <div class="cardChanges__title">
+                                                До обучения:
+                                            </div>
+                                            <p class="cardChanges__text">
+                                                Работала консультантом в салоне связи.
+                                            </p>
+                                            <div class="cardChanges__title _before">
+                                                Зарплата
+                                            </div>
+                                            <p class="cardChanges__text _before">
+                                                25 000 рубл в месяц.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case__after">
+                                    <div class="cardChanges">
+                                        <div class="cardChanges__image" style="background-image: url(./img/changes1.png)"></div>
+                                        <div class="cardChanges__info">
+                                            <div class="cardChanges__title">
+                                                До обучения:
+                                            </div>
+                                            <p class="cardChanges__text">
+                                                Работала консультантом в салоне связи.
+                                            </p>
+                                            <div class="cardChanges__title _after">
+                                                Зарплата
+                                            </div>
+                                            <p class="cardChanges__text _after">
+                                                25 000 рубл в месяц.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__info">
+                                <div class="case__title">
+                                    <h3 class="title _small _simple">
+                                        История
+                                    </h3>
+                                </div>
+                                <div class="case">
+                                    <div class="case__text">
+                                        Разнообразный и богатый опыт постоянное информационно пропагандистское обеспечение нашей деятельности позволяет оценить значение
+                                        соответствующий условий активизации.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__button">
+                                <a href="#" class="button _news _simple">
+                                    <div class="button__text">
+                                        Читать далее
+                                    </div>
+                                    <div class="button__icon">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </articles>
+                    </div>
+                    <div class="bigPersonCards__item">
+                        <articles class="case">
+                            <div class="case__title">
+                                <h3 class="title _small">
+                                    Ирина Изоточкина
+                                </h3>
+                            </div>
+                            <div class="case__changes">
+                                <div class="case__before">
+                                    <div class="cardChanges">
+                                        <div class="cardChanges__image" style="background-image: url(./img/changes1.png)"></div>
+                                        <div class="cardChanges__info">
+                                            <div class="cardChanges__title">
+                                                До обучения:
+                                            </div>
+                                            <p class="cardChanges__text">
+                                                Работала консультантом в салоне связи.
+                                            </p>
+                                            <div class="cardChanges__title _before">
+                                                Зарплата
+                                            </div>
+                                            <p class="cardChanges__text _before">
+                                                25 000 рубл в месяц.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case__after">
+                                    <div class="cardChanges">
+                                        <div class="cardChanges__image" style="background-image: url(./img/changes1.png)"></div>
+                                        <div class="cardChanges__info">
+                                            <div class="cardChanges__title">
+                                                До обучения:
+                                            </div>
+                                            <p class="cardChanges__text">
+                                                Работала консультантом в салоне связи.
+                                            </p>
+                                            <div class="cardChanges__title _after">
+                                                Зарплата
+                                            </div>
+                                            <p class="cardChanges__text _after">
+                                                25 000 рубл в месяц.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__info">
+                                <div class="case__title">
+                                    <h3 class="title _small _simple">
+                                        История
+                                    </h3>
+                                </div>
+                                <div class="case">
+                                    <div class="case__text">
+                                        Разнообразный и богатый опыт постоянное информационно пропагандистское обеспечение нашей деятельности позволяет оценить значение
+                                        соответствующий условий активизации.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__button">
+                                <a href="#" class="button _news _simple">
+                                    <div class="button__text">
+                                        Читать далее
+                                    </div>
+                                    <div class="button__icon">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </articles>
+                    </div>
+                    <div class="bigPersonCards__item">
+                        <articles class="case">
+                            <div class="case__title">
+                                <h3 class="title _small">
+                                    Ирина Изоточкина
+                                </h3>
+                            </div>
+                            <div class="case__changes">
+                                <div class="case__before">
+                                    <div class="cardChanges">
+                                        <div class="cardChanges__image" style="background-image: url(./img/changes1.png)"></div>
+                                        <div class="cardChanges__info">
+                                            <div class="cardChanges__title">
+                                                До обучения:
+                                            </div>
+                                            <p class="cardChanges__text">
+                                                Работала консультантом в салоне связи.
+                                            </p>
+                                            <div class="cardChanges__title _before">
+                                                Зарплата
+                                            </div>
+                                            <p class="cardChanges__text _before">
+                                                25 000 рубл в месяц.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case__after">
+                                    <div class="cardChanges">
+                                        <div class="cardChanges__image" style="background-image: url(./img/changes1.png)"></div>
+                                        <div class="cardChanges__info">
+                                            <div class="cardChanges__title">
+                                                До обучения:
+                                            </div>
+                                            <p class="cardChanges__text">
+                                                Работала консультантом в салоне связи.
+                                            </p>
+                                            <div class="cardChanges__title _after">
+                                                Зарплата
+                                            </div>
+                                            <p class="cardChanges__text _after">
+                                                25 000 рубл в месяц.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__info">
+                                <div class="case__title">
+                                    <h3 class="title _small _simple">
+                                        История
+                                    </h3>
+                                </div>
+                                <div class="case">
+                                    <div class="case__text">
+                                        Разнообразный и богатый опыт постоянное информационно пропагандистское обеспечение нашей деятельности позволяет оценить значение
+                                        соответствующий условий активизации.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__button">
+                                <a href="#" class="button _news _simple">
+                                    <div class="button__text">
+                                        Читать далее
+                                    </div>
+                                    <div class="button__icon">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </articles>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer__content">
+            <menu class="footer__menu">
+                <li class="footer__item">
+                    <a class="footer__link" href="">
+                        Публичная оферта
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">
+                        Авторские права
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">
+                        Обратная связь
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">
+                        Сотрудничество
+                    </a>
+                </li>
+            </menu>
+            <div class="footer__copy">
+                © 2019
+            </div>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css"></link>
+
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

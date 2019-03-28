@@ -5,6 +5,7 @@
     text-align: center;
     padding-bottom: 30px;
     padding-top: 15px;
+
     &:after {
         content: '';
         position: absolute;
@@ -15,6 +16,35 @@
         left: 50%;
         transform: translate(-50%, 0);
     }
+
+    &._small {
+        text-align: inherit;
+        font-family: "Roboto Slab";
+        font-size: .8rem;
+        padding-bottom: 15px;
+        margin: 0;
+        padding-top: 0;
+
+        &:after {
+            content: '';
+            position: absolute;
+            background-color: #fe2d2d;
+            width: 30px;
+            height: 3px;
+            bottom: 0px;
+            left: 0;
+            transform: none;
+        }
+    }
+
+    &._simple {
+        font-weight: 500;
+    }
+
+    &._program{
+        font-size: 1rem;
+    }
+
     @include resp(0, 960) {
         padding-bottom: 15px;
         padding-top: 7px;

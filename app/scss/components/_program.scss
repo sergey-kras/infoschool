@@ -1,0 +1,82 @@
+.program {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 0px 28px -3px rgba(0, 0, 0, 0.58);
+    flex-wrap: wrap;
+
+    &__image {
+        @include size(4.5);
+        @include size-lg(5);
+        @include size-md(5);
+        @include size-sm(8);
+        @include size-xs(12);
+        position: relative;
+        background-size: cover;
+        flex-grow: 1;
+        background-position: center center;
+
+        &:after {
+            content: '';
+            position: absolute;
+            padding-top: 100%;
+        }
+
+        @include resp(0, 780) {
+            height: 40vw;
+            margin: 0 auto;
+            margin-top: 15px;
+            flex-grow: inherit;
+        }
+
+        @include resp(0, 560) {
+            height: 60vw;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+
+    }
+
+    &__info {
+        @include size(7.5);
+        @include size-lg(7);
+        @include size-md(12);
+        padding: 20px 30px;
+        box-sizing: border-box;
+    }
+
+    &__text {
+        font-family: "Lato";
+        font-size: 0.666rem;
+        color: #141417;
+        margin: 0;
+        margin-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    &__colory {
+        color: #fe2d2d;
+    }
+
+    &__params {
+        padding-top: 15px;
+        padding-bottom: 30px;
+        border-top: 1px solid #d1d5db;
+    }
+
+    &__leftparam {
+        font-family: "Lato";
+        color: #355ad4;
+        font-size: 0.75rem;
+    }
+
+    &__rightparam {
+        font-family: "Lato";
+        color: #141417;
+        font-size: 0.666rem;
+    }
+
+    &__button {
+        width: 245px;
+    }
+}

@@ -11,28 +11,37 @@
         @include size(5.8);
         @include size-md(12);
         position: relative;
-        margin-bottom: 15px;
+        margin-bottom: 60px;
+        box-shadow: 0px 0px 28px -3px rgba(0, 0, 0, 0.58);
+        background-color: #fff;
+        padding: 30px;
 
-        &:after {
-            content: '';
-            position: absolute;
-            background-color: #316af0;
-            width: 60%;
-            height: 75px;
-            z-index: -2;
-            top: -15px;
-            left: -15px;
+        @include resp(0, 960) {
+            padding: 15px;
         }
 
-        &:before {
-            content: '';
-            position: absolute;
-            background-color: #316af0;
-            width: 60%;
-            height: 75px;
-            z-index: -2;
-            bottom: -15px;
-            right: -15px;
+        &._withClass {
+            &:after {
+                content: '';
+                position: absolute;
+                background-color: #316af0;
+                width: 60%;
+                height: 75px;
+                z-index: -2;
+                top: -15px;
+                left: -15px;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                background-color: #316af0;
+                width: 60%;
+                height: 75px;
+                z-index: -2;
+                bottom: -15px;
+                right: -15px;
+            }
         }
     }
 

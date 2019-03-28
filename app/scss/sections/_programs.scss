@@ -1,0 +1,10 @@
+.programs {
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        margin-bottom: 55px;
+    }
+}

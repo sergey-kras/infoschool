@@ -1,0 +1,36 @@
+.cardChanges {
+    background-color: #fff;
+
+    &__image {
+        padding-top: 110%;
+        background-size: cover;
+    }
+
+    &__info {
+        padding: 0px 20px;
+        padding-bottom: 30px;
+        background-color: #f2f3f5;
+    }
+
+    &__title {
+        font-size: 0.666rem;
+        font-family: "LatoSemibold";
+        text-transform: uppercase;
+        margin-bottom: 7px;
+        padding-top: 20px;
+    }
+
+    &__text {
+        font-size: 0.666rem;
+        font-family: "Lato";
+        margin: 0;
+    }
+
+    ._before {
+        color: #fe2d2d;
+    }
+
+    ._after{
+        color: #316bf2;
+    }
+}

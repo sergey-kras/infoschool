@@ -57,7 +57,7 @@ gulp.task('sass', ['smartgrid'], function () {
         .pipe(sass(
             {
                 includePaths: require('node-normalize-scss').includePaths,
-                outputStyle: 'compressed' // тип выхода
+                //outputStyle: 'compressed' // тип выхода
             }))
         .pipe(gulp.dest('./dist/css/'))
 });

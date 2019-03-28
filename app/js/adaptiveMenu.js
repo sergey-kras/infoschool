@@ -4,7 +4,7 @@ function menu($) {
     let $overley = $('.burger__overley');
     let $menu = $('.mainMenu__content');
     let $body = $('body');
-    let OPEN_CLASS = '_opened';
+    const OPEN_CLASS = '_opened';
 
     $burger.on('click', switcher);
 

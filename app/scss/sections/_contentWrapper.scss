@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+
     &__container {
         @include wrapper();
         @include size-lg(10);
@@ -15,11 +16,18 @@
         padding-bottom: 30px;
         min-height: 100vh;
         box-sizing: border-box;
+
         @include resp(0, 960) {
             padding-top: 15px;
             padding-bottom: 15px;
         }
+
+        @include resp(1170, 9999) {
+            padding-right: 0;
+            padding-left: 0;
+        }
     }
+
     &:before {
         content: '';
         position: absolute;
@@ -30,10 +38,12 @@
         background-image: url(../../img/leftBg.png);
         background-repeat: no-repeat;
         background-size: contain;
+
         @include resp(0, 1650) {
             display: none;
         }
     }
+
     &:after {
         content: '';
         position: absolute;
@@ -45,6 +55,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position-x: right;
+
         @include resp(0, 1650) {
             display: none;
         }

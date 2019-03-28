@@ -11,42 +11,61 @@
     align-items: center;
     justify-content: center;
     transition: .3s;
+
     &._form {
         background-color: #ff3232;
         border: 1px solid #ff3232;
         color: #fff;
+
         &:hover {
             background-color: #fff;
             color: #ff3232;
         }
     }
+
     &._news {
         color: #4368dc;
         font-family: "LatoMedium";
         border: 1px solid #4368dc;
         padding: 20px 25px;
+
         &:hover {
             border: 1px solid #ff3232;
             color: #ff3232;
+
             .button__icon {
                 margin-left: 3px;
             }
+
             .button__text {
                 margin-left: 3px;
             }
         }
+
         @include resp(0, 780) {
             padding: 10px 15px;
         }
     }
+
+    &._simple {
+        padding: 0;
+        border: none;
+        justify-content: flex-start;
+        &:hover {
+            border: none;
+        }
+    }
+
     &__text {
         margin-right: 5px;
         margin-left: 0px;
         transition: margin-left .3s;
     }
+
     &__icon {
         margin-top: 3px;
         transition: margin-left .3s;
+
         @include resp(0, 780) {
             margin-top: 2px;
         }

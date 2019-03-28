@@ -1,0 +1,46 @@
+.case {
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__changes {
+        @include row-flex();
+        flex-wrap: nowrap;
+        margin-bottom: 30px;
+
+        @include resp(0, 780) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__before,
+    &__after {
+        @include col();
+
+        @include resp(0, 780) {
+            @include size(6);
+        }
+
+        @include resp(0, 560) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    &__after {
+        @include resp(0, 780) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__text {
+        font-size: 0.666rem;
+        font-family: "Lato";
+    }
+
+    &__button {
+        margin-top: 15px;
+    }
+}
