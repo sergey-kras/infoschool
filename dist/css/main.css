@@ -977,6 +977,27 @@ body {
 .programs__item {
   margin-bottom: 55px; }
 
+.specialists__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0; }
+
+.specialists__item {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(49.16667% - 15px);
+  box-shadow: 0px 0px 28px -3px rgba(0, 0, 0, 0.58);
+  margin-bottom: 35px; }
+  @media screen and (max-width: 780px) {
+    .specialists__item {
+      width: calc(100% - 15px); } }
+
 .headTitile {
   font-family: 'LatoBlack';
   text-transform: uppercase;
@@ -1421,3 +1442,85 @@ body {
     font-size: 0.666rem; }
   .program__button {
     width: 245px; }
+
+.specialistCard {
+  display: flex; }
+  @media screen and (min-width: 0px) and (max-width: 400px) {
+    .specialistCard {
+      flex-wrap: wrap; } }
+  .specialistCard__left {
+    min-width: 40%;
+    background-color: #8691a0; }
+    @media screen and (min-width: 0px) and (max-width: 1170px) {
+      .specialistCard__left {
+        min-width: 50%; } }
+    @media screen and (min-width: 0px) and (max-width: 400px) {
+      .specialistCard__left {
+        min-width: 100%; } }
+  .specialistCard__right {
+    width: 60%; }
+    @media screen and (min-width: 0px) and (max-width: 1170px) {
+      .specialistCard__right {
+        width: 50%; } }
+  .specialistCard__image {
+    position: relative;
+    width: 100%;
+    padding-top: 120%;
+    background-size: cover; }
+    @media screen and (min-width: 0px) and (max-width: 1170px) {
+      .specialistCard__image {
+        padding-top: 140%; } }
+    @media screen and (min-width: 0px) and (max-width: 400px) {
+      .specialistCard__image {
+        padding-top: 100%; } }
+  .specialistCard__info {
+    padding: 25px;
+    box-sizing: border-box;
+    color: #fff; }
+  .specialistCard__name {
+    font-family: "Roboto Slab";
+    font-size: 0.833rem;
+    padding-bottom: 15px;
+    position: relative; }
+    .specialistCard__name:after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: #fff;
+      bottom: 2px;
+      left: 0; }
+  .specialistCard__abouts {
+    font-size: 0.666rem;
+    font-family: "Lato"; }
+  .specialistCard__about {
+    margin-top: 5px;
+    width: 100%;
+    display: inline-block; }
+  .specialistCard__params {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    font-size: 0.666rem;
+    font-family: "Lato"; }
+    @media screen and (min-width: 0px) and (max-width: 1170px) {
+      .specialistCard__params {
+        padding: 10px 15px; } }
+  .specialistCard__value {
+    color: #316bf2;
+    margin-bottom: 10px; }
+  .specialistCard__key {
+    margin-bottom: 10px;
+    margin-top: 10px; }
+  .specialistCard__param {
+    border-bottom: 1px solid #dddddd; }
+  .specialistCard__socials {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    position: absolute;
+    right: 10px;
+    bottom: -2px; }
+  .specialistCard__social {
+    margin-right: 3px;
+    margin-left: 3px; }
