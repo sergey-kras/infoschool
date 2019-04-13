@@ -780,7 +780,6 @@ body {
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
-    min-height: 100vh;
     box-sizing: border-box; }
     @media screen and (max-width: 560px) {
       .contentWrapper__container {
