@@ -1,0 +1,55 @@
+.pagination {
+    margin-bottom: 50px;
+
+    &__wrapper {
+        @include wrapper;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    &__item {
+        font-family: "Lato";
+        font-size: 0.583rem;
+        color: #64647e;
+        text-decoration: none;
+        padding: 20px;
+        position: relative;
+
+        &._active {
+            color: #316bf2;
+            font-family: "LatoBold";
+        }
+
+        &:hover {
+            &:after {
+                opacity: 1;
+                bottom: 0;
+            }
+        }
+
+        &:after {
+            content: '';
+            width: 100%;
+            position: absolute;
+            height: 3px;
+            background-color: #fe2d2d;
+            bottom: -5px;
+            left: 0;
+            opacity: 0;
+            transition: .3s;
+        }
+
+        &._mobile {
+            @include resp(780,9999){
+                display: none;
+            }
+        }
+
+        &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8),&:nth-child(9),&:nth-child(10){
+            @include resp(0,780){
+                display: none;
+            }
+        }
+    }
+}

@@ -997,6 +997,50 @@ body {
     .specialists__item {
       width: calc(100% - 15px); } }
 
+.pagination {
+  margin-bottom: 50px; }
+  .pagination__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #dddddd; }
+    @media screen and (max-width: 560px) {
+      .pagination__wrapper {
+        padding-left: 15px;
+        padding-right: 15px; } }
+  .pagination__item {
+    font-family: "Lato";
+    font-size: 0.583rem;
+    color: #64647e;
+    text-decoration: none;
+    padding: 20px;
+    position: relative; }
+    .pagination__item._active {
+      color: #316bf2;
+      font-family: "LatoBold"; }
+    .pagination__item:hover:after {
+      opacity: 1;
+      bottom: 0; }
+    .pagination__item:after {
+      content: '';
+      width: 100%;
+      position: absolute;
+      height: 3px;
+      background-color: #fe2d2d;
+      bottom: -5px;
+      left: 0;
+      opacity: 0;
+      transition: .3s; }
+    @media screen and (min-width: 780px) and (max-width: 9999px) {
+      .pagination__item._mobile {
+        display: none; } }
+    @media screen and (min-width: 0px) and (max-width: 780px) {
+      .pagination__item:nth-child(5), .pagination__item:nth-child(6), .pagination__item:nth-child(7), .pagination__item:nth-child(8), .pagination__item:nth-child(9), .pagination__item:nth-child(10) {
+        display: none; } }
+
 .headTitile {
   font-family: 'LatoBlack';
   text-transform: uppercase;
