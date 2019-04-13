@@ -1,0 +1,37 @@
+.imageText {
+    @include row-flex();
+    margin: 60px 0;
+
+    @include resp(0, 780) {
+        margin: 30px 0;
+    }
+
+    &__image {
+        @include size(4);
+        @include size-md(12);
+        @include col();
+        background-size: cover;
+
+        @include resp(0, 780) {
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            order: 1;
+        }
+    }
+
+    &__text {
+        @include size(8);
+        @include size-md(12);
+        @include col();
+        font-family: "LatoMedium";
+        font-size: 0.75rem;
+        color: #1a1a1d;
+        line-height: 1rem;
+
+        @include resp(0, 780) {
+            order: 2;
+        }
+    }
+}
