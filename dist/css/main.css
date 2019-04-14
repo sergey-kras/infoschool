@@ -1021,6 +1021,9 @@ body {
     .pagination__item._active {
       color: #316bf2;
       font-family: "LatoBold"; }
+    @media screen and (min-width: 0px) and (max-width: 560px) {
+      .pagination__item {
+        padding: 15px; } }
     .pagination__item:hover:after {
       opacity: 1;
       bottom: 0; }
@@ -1039,6 +1042,9 @@ body {
         display: none; } }
     @media screen and (min-width: 0px) and (max-width: 780px) {
       .pagination__item:nth-child(5), .pagination__item:nth-child(6), .pagination__item:nth-child(7), .pagination__item:nth-child(8), .pagination__item:nth-child(9), .pagination__item:nth-child(10) {
+        display: none; } }
+    @media screen and (min-width: 0px) and (max-width: 560px) {
+      .pagination__item:nth-child(11) {
         display: none; } }
 
 .headTitile {
@@ -1138,9 +1144,12 @@ body {
   .button._simple {
     padding: 0;
     border: none;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    border: 1px solid #fff;
+    padding: 3px; }
     .button._simple:hover {
-      border: none; }
+      border: none;
+      border: 1px solid #ff3232; }
   .button__text {
     margin-right: 5px;
     margin-left: 0px;
@@ -1161,10 +1170,12 @@ body {
       color: #fff; } }
 
 .miniContact._onLinghtBg {
-  color: #fff; }
+  color: #fff;
+  text-shadow: 0px 0px 9px #6d6d6d; }
 
 .miniContact._onDarkBg {
-  color: #141417; }
+  color: #141417;
+  text-shadow: 0px 0px 9px white; }
 
 .miniContact__socials {
   display: flex;
@@ -1330,7 +1341,8 @@ body {
 .bigPersonCard {
   display: flex;
   flex-direction: column;
-  position: relative; }
+  position: relative;
+  align-items: baseline; }
   @media screen and (min-width: 0px) and (max-width: 560px) {
     .bigPersonCard {
       padding: 15px; } }
@@ -1387,7 +1399,8 @@ body {
   font-family: "Lato"; }
 
 .case__button {
-  margin-top: 15px; }
+  margin-top: 15px;
+  width: max-content; }
 
 .cardChanges {
   background-color: #fff; }
@@ -1583,7 +1596,7 @@ body {
     padding-right: 30px;
     position: absolute;
     width: 100%;
-    top: 5%;
+    top: 28%;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;

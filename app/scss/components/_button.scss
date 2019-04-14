@@ -51,8 +51,11 @@
         padding: 0;
         border: none;
         justify-content: flex-start;
+        border: 1px solid #fff;
+        padding: 3px;
         &:hover {
             border: none;
+            border: 1px solid #ff3232;
         }
     }
 

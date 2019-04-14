@@ -21,6 +21,10 @@
             font-family: "LatoBold";
         }
 
+        @include resp(0,560){
+            padding: 15px;
+        }
+
         &:hover {
             &:after {
                 opacity: 1;
@@ -48,6 +52,12 @@
 
         &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8),&:nth-child(9),&:nth-child(10){
             @include resp(0,780){
+                display: none;
+            }
+        }
+
+        &:nth-child(11){
+            @include resp(0,560){
                 display: none;
             }
         }
