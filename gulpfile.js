@@ -95,7 +95,7 @@ gulp.task('compress', ['clean-img'], function () {
 gulp.task('watcher', ['html', 'libs', 'sass'], function () {
     gulp.watch("./app/scss/**/*.scss", ['sass']);
     gulp.watch("./app/scss/*.scss", ['sass']);
-    gulp.watch("./app/js/*.js", ['libs']);
+    gulp.watch("./app/**/*.js", ['libs']);
     gulp.watch("./app/img/*", ['compress']);
     gulp.watch("./app/*.html", ['html']);
 });

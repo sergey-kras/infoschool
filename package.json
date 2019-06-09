@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/SergeyKrasnolutskiy/simplefront#readme",
   "devDependencies": {
+    "axios": "^0.18.0",
     "browser-sync": "^2.23.6",
     "concat": "^1.0.3",
     "gulp": "^3.9.1",
@@ -37,7 +38,7 @@
     "node-normalize-scss": "^3.0.0",
     "normalize.css": "^8.0.0",
     "owl.carousel2": "^2.2.1",
-    "react": "^16.8.4",
+    "react": "^16.8.6",
     "smart-grid": "^2.0.1"
   },
   "dependencies": {

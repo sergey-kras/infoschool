@@ -18,7 +18,7 @@
     &__after {
         @include col();
 
-        @include resp(0, 780) {
+        @include resp(0, 9999) {
             @include size(6);
         }
 
@@ -38,6 +38,9 @@
     &__text {
         font-size: 0.666rem;
         font-family: "Lato";
+        height: 2.3rem;
+        overflow: hidden;
+        transition: height .5s;
     }
 
     &__button {
