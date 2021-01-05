@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/SergeyKrasnolutskiy/simplefront#readme",
   "devDependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "browser-sync": "^2.23.6",
     "concat": "^1.0.3",
     "gulp": "^3.9.1",
